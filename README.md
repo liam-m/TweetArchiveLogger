@@ -41,7 +41,6 @@ Using tables for layout like it's 1996.
 
 ---
 
-
 ```
 
 #### `date_format`
