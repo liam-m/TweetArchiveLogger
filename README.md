@@ -35,8 +35,6 @@ Here is an example of `tweet_format`:
 
 The above formats a tweet like this:
 ```
-
-
 Using tables for layout like it's 1996.
 
 [March 31, 2014 at 09:36PM](http://twitter.com/jobbogamer/status/450748504517115905)
