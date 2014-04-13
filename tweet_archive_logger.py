@@ -15,7 +15,7 @@ tweet_format = '''
 
 date_format = '{{month}} {{day}}, {{year}} at {{hour_12}}:{{minute}}{{am}}'
 
-base_url = 'http://twitter.com/' + username + '/status/'
+
 
 def get_12_hour(hour):
 	if int(hour) == 0 or int(hour) == 12:
@@ -92,6 +92,8 @@ def format_tweet(tweet, format):
 	retweeted_status_user_id = 7
 	retweeted_status_timestamp = 8
 	expanded_urls = 9
+	
+	base_url = 'http://twitter.com/' + username + '/status/'
 	
 	out = format
 	out = out.replace("{{id}}", tweet[tweet_id])
