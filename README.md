@@ -2,6 +2,8 @@
 
 Python script which turns a Tweet Archive into a single, nicely-formatted Markdown file. Allows some (basic) custom formatting options.
 
+At the moment, the output file contains the tweets in reverse chronological order, that is, the newest tweet at the top.
+
 ## Usage
 
 ### 1. Download your tweet archive
