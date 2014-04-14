@@ -2,7 +2,7 @@
 
 Python script which turns a Tweet Archive into a single, nicely-formatted Markdown file. Allows some (basic) custom formatting options.
 
-At the moment, the output file contains the tweets in reverse chronological order, that is, the newest tweet at the top.
+The script reads tweets in chronological order, and the output file will contain the oldest tweet at the top.[^1]
 
 ## Usage
 
@@ -74,3 +74,5 @@ Now just run the script like you would any other Python script, either through y
 
 ## Contributing
 Feel free to fork, change things, and issue a pull request. This isn't a very robust script, and there aren't many formatting options at the moment.
+
+[^1]: This is done because I used this script to start a tweet log that gets appended to by ifttt. Since ifttt can only append to files at the bottom, the tweets had to be oldest first.

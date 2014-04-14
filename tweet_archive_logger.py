@@ -107,7 +107,7 @@ output = ''
 
 with open(csv_path, 'rb') as csvfile:
 	reader = csv.reader(csvfile)
-	for row in reader:
+	for row in reversed(list(reader)):
 		if (row[0] != "tweet_id"):
 			output += format_tweet(row, tweet_format)
 
