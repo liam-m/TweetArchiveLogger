@@ -18,43 +18,19 @@ date_format = '{{month}} {{day}}, {{year}} at {{hour_12}}:{{minute}}{{am}}'
 
 
 def get_12_hour(hour):
-	if int(hour) == 0 or int(hour) == 12:
+	if int(hour) in [0, 12]:
 		return '12'
 	elif int(hour) > 12:
-		h = str(int(hour) - 12)
-		while len(h) < 2:
-			h = '0' + h
-		return h
-	else:
-		while len(hour) < 2:
-			hour = '0' + hour
-		return hour
+		hour = str(int(hour) - 12)
+        while len(hour) < 2:
+                hour = '0' + hour
+        return hour
 
 def get_month(n):
-	if n == 1:
-		return "January"
-	elif n == 2:
-		return "February"
-	elif n == 3:
-		return "March"
-	elif n == 4:
-		return "April"
-	elif n == 5:
-		return "May"
-	elif n == 6:
-		return "June"
-	elif n == 7:
-		return "July"
-	elif n == 8:
-		return "August"
-	elif n == 9:
-		return "September"
-	elif n == 10:
-		return "October"
-	elif n == 11:
-		return "November"
-	elif n == 12:
-		return "December"
+        d = {1: "January", 2: "February", 3: "March", 4: "April", 5: "May",
+             6: "June", 7: "July", 8: "August", 9: "September", 10: "October",
+             11: "Novermber", 12: "December"}
+        return d.get(n) # None if n not in range 1-12
 
 def format_date(date, format):
 	year = date[:4]
