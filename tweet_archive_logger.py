@@ -113,3 +113,4 @@ with open(csv_path, 'rb') as csvfile:
 
 output_file = open(output_path, 'wb')
 output_file.write(output)
+output_file.close()
